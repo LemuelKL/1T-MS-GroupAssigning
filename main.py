@@ -33,11 +33,20 @@ class teacher:
 
 class course:
     max_nStudent = 5
-    def __init__(self, subjType, idNo, nAvTeacher, nAvStudent, nID):
-        self.idNo = idNo
-        self.nAvT = nAvT
-        self.nAvS = nAvS
+    def __init__(self, subjType, idNumber, nAvTeacher, nAvStudent, nID):
+        self.subjType = subjType
+        self.idNumber = idNumber
+        self.idName = subjType + "_" + str(idNumber)
+        self.nAvTeacher = nAvTeacher
+        self.nAvStudent = nAvStudent
         self.nID = nID
+
+def constructCourses(subjType, nCourseToConstruct):
+    ret = []
+    for i in range (0, nCourseToConstruct):
+        tempCourse = course(subjType, i+1, None, None, nCourseToConstruct)
+        ret.append(tempCourse)
+    return ret
 
 def main():
     print("Hi")
@@ -47,11 +56,15 @@ def main():
     print(mhy.nAvSubj)
     print(mhy.avSubj)
 
-def constructCourses(subjType, nCourseToConstruct):
-    ret = []
-    for i in range (0, nCourseToConstruct):
-        tempCourse = course(subjType, i+1, None, None, nCourseToConstruct)
-        ret.append()
-    return ret
+    societyCourses = constructCourses("society", 3)
+    for societyCourse in societyCourses:
+        print("==========")
+        print(societyCourse.idName)
+        print(societyCourse.subjType)
+        print(societyCourse.nAvTeacher)
+        print(societyCourse.nAvStudent)
+        print(societyCourse.idNumber)
+        print(societyCourse.nID)
+        print("==========")
 
 main()
