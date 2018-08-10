@@ -1,0 +1,17 @@
+[
+	{
+        "pyccode": "001",
+        "choie1": "society",
+        "choie2": "finanace"
+    },
+    {
+        "pyccode": "002",
+        "choie1": "math",
+        "choie2": "it"
+    },
+	{
+        "pyccode": "003",
+        "choie1": "phy",
+        "choie2": "engine"
+    }
+]
