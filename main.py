@@ -1,6 +1,5 @@
 import json
 from pprint import pprint
-from pprint import pformat
 import random
 
 nTeacher = 40
@@ -31,12 +30,13 @@ subjMaster = ["chinL", "engL", "edu", "engine", "math", "society", "finance", "i
 # society_2
 # society_3
 
+
 class teacher:
     avIndex = None
-    def __init__(self, idName, avSubj):
+    def __init__(self, idName, avSubjs):
         self.idName = idName
-        self.nAvSubj = len(avSubj)
-        self.avSubj = avSubj
+        self.nAvSubj = len(avSubjs)
+        self.avSubjs = avSubjs
 
     def calcAvIndex():
         return
@@ -81,7 +81,7 @@ def main():
     mhy = teacher("mhy", ["math1", "phy1"])
     print(mhy.idName)
     print(mhy.nAvSubj)
-    print(mhy.avSubj)
+    print(mhy.avSubjs)
 
     societyCourses = constructCourses("society", 3)
     for societyCourse in societyCourses:
@@ -122,5 +122,5 @@ def genRandomStudentData2Json(filename):
     jsonString = objs2Json(genRandomStudents())
     writeJson(filename, jsonString)
         
-genRandomStudentDataToJson('data/studentChoiesTest.json')
+genRandomStudentData2Json('data/studentChoies.json')
 #main()
