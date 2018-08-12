@@ -1,6 +1,5 @@
 [
     {
-<<<<<<< HEAD
         "pyccode": "001",
         "choice1": "it",
         "choice2": "society"
@@ -1171,11 +1170,9 @@
     {
         "pyccode": "121", 
         "choice1": "engine", 
->>>>>>> 18bf8106ea18e177ae729bb878d0c0c707a1b2c9
         "choice2": "society"
     }, 
     {
-<<<<<<< HEAD
         "pyccode": "115",
         "choice1": "edu",
         "choice2": "medic"
@@ -1304,7 +1301,7 @@
         "pyccode": "140",
         "choice1": "engine",
         "choice2": "edu"
-=======
+
         "pyccode": "122", 
         "choice1": "engL", 
         "choice2": "edu"
