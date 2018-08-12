@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "pyccode": "001",
         "choice1": "it",
         "choice2": "society"
@@ -32,9 +33,49 @@
     {
         "pyccode": "007",
         "choice1": "edu",
+=======
+        "pyccode": "001", 
+        "choice1": "society", 
         "choice2": "phy"
-    },
+    }, 
     {
+        "pyccode": "002", 
+        "choice1": "edu", 
+        "choice2": "society"
+    }, 
+    {
+        "pyccode": "003", 
+        "choice1": "medic", 
+        "choice2": "engL"
+    }, 
+    {
+        "pyccode": "004", 
+        "choice1": "medic", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "005", 
+        "choice1": "math", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "006", 
+        "choice1": "edu", 
+        "choice2": "phy"
+    }, 
+    {
+        "pyccode": "007", 
+        "choice1": "phy", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "008", 
+        "choice1": "finance", 
+>>>>>>> 18bf8106ea18e177ae729bb878d0c0c707a1b2c9
+        "choice2": "phy"
+    }, 
+    {
+<<<<<<< HEAD
         "pyccode": "008",
         "choice1": "math",
         "choice2": "it"
@@ -137,9 +178,159 @@
     {
         "pyccode": "028",
         "choice1": "chinL",
-        "choice2": "medic"
-    },
+=======
+        "pyccode": "009", 
+        "choice1": "edu", 
+        "choice2": "phy"
+    }, 
     {
+        "pyccode": "010", 
+        "choice1": "medic", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "011", 
+        "choice1": "edu", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "012", 
+        "choice1": "it", 
+        "choice2": "edu"
+    }, 
+    {
+        "pyccode": "013", 
+        "choice1": "edu", 
+        "choice2": "engine"
+    }, 
+    {
+        "pyccode": "014", 
+        "choice1": "it", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "015", 
+        "choice1": "chinL", 
+        "choice2": "society"
+    }, 
+    {
+        "pyccode": "016", 
+        "choice1": "math", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "017", 
+        "choice1": "engine", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "018", 
+        "choice1": "math", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "019", 
+        "choice1": "it", 
+        "choice2": "finance"
+    }, 
+    {
+        "pyccode": "020", 
+        "choice1": "math", 
+        "choice2": "edu"
+    }, 
+    {
+        "pyccode": "021", 
+        "choice1": "math", 
+        "choice2": "edu"
+    }, 
+    {
+        "pyccode": "022", 
+        "choice1": "finance", 
+        "choice2": "phy"
+    }, 
+    {
+        "pyccode": "023", 
+        "choice1": "society", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "024", 
+        "choice1": "it", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "025", 
+        "choice1": "phy", 
+        "choice2": "engL"
+    }, 
+    {
+        "pyccode": "026", 
+        "choice1": "engine", 
+        "choice2": "medic"
+    }, 
+    {
+        "pyccode": "027", 
+        "choice1": "it", 
+        "choice2": "edu"
+    }, 
+    {
+        "pyccode": "028", 
+        "choice1": "edu", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "029", 
+        "choice1": "engL", 
+        "choice2": "medic"
+    }, 
+    {
+        "pyccode": "030", 
+        "choice1": "finance", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "031", 
+        "choice1": "finance", 
+        "choice2": "medic"
+    }, 
+    {
+        "pyccode": "032", 
+        "choice1": "society", 
+        "choice2": "phy"
+    }, 
+    {
+        "pyccode": "033", 
+        "choice1": "engL", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "034", 
+        "choice1": "phy", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "035", 
+        "choice1": "finance", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "036", 
+        "choice1": "engine", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "037", 
+        "choice1": "society", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "038", 
+        "choice1": "math", 
+>>>>>>> 18bf8106ea18e177ae729bb878d0c0c707a1b2c9
+        "choice2": "medic"
+    }, 
+    {
+<<<<<<< HEAD
         "pyccode": "029",
         "choice1": "edu",
         "choice2": "medic"
@@ -242,9 +433,109 @@
     {
         "pyccode": "049",
         "choice1": "chinL",
-        "choice2": "phy"
-    },
+=======
+        "pyccode": "039", 
+        "choice1": "chinL", 
+        "choice2": "math"
+    }, 
     {
+        "pyccode": "040", 
+        "choice1": "math", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "041", 
+        "choice1": "edu", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "042", 
+        "choice1": "medic", 
+        "choice2": "society"
+    }, 
+    {
+        "pyccode": "043", 
+        "choice1": "edu", 
+        "choice2": "finance"
+    }, 
+    {
+        "pyccode": "044", 
+        "choice1": "edu", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "045", 
+        "choice1": "society", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "046", 
+        "choice1": "society", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "047", 
+        "choice1": "it", 
+        "choice2": "engL"
+    }, 
+    {
+        "pyccode": "048", 
+        "choice1": "engL", 
+        "choice2": "medic"
+    }, 
+    {
+        "pyccode": "049", 
+        "choice1": "medic", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "050", 
+        "choice1": "edu", 
+        "choice2": "phy"
+    }, 
+    {
+        "pyccode": "051", 
+        "choice1": "phy", 
+        "choice2": "society"
+    }, 
+    {
+        "pyccode": "052", 
+        "choice1": "finance", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "053", 
+        "choice1": "medic", 
+        "choice2": "finance"
+    }, 
+    {
+        "pyccode": "054", 
+        "choice1": "medic", 
+        "choice2": "engine"
+    }, 
+    {
+        "pyccode": "055", 
+        "choice1": "edu", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "056", 
+        "choice1": "medic", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "057", 
+        "choice1": "engL", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "058", 
+        "choice1": "edu", 
+>>>>>>> 18bf8106ea18e177ae729bb878d0c0c707a1b2c9
+        "choice2": "phy"
+    }, 
+    {
+<<<<<<< HEAD
         "pyccode": "050",
         "choice1": "finance",
         "choice2": "chinL"
@@ -567,9 +858,324 @@
     {
         "pyccode": "114",
         "choice1": "medic",
-        "choice2": "society"
-    },
+=======
+        "pyccode": "059", 
+        "choice1": "edu", 
+        "choice2": "it"
+    }, 
     {
+        "pyccode": "060", 
+        "choice1": "society", 
+        "choice2": "engine"
+    }, 
+    {
+        "pyccode": "061", 
+        "choice1": "it", 
+        "choice2": "engL"
+    }, 
+    {
+        "pyccode": "062", 
+        "choice1": "finance", 
+        "choice2": "medic"
+    }, 
+    {
+        "pyccode": "063", 
+        "choice1": "engine", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "064", 
+        "choice1": "finance", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "065", 
+        "choice1": "edu", 
+        "choice2": "engine"
+    }, 
+    {
+        "pyccode": "066", 
+        "choice1": "engine", 
+        "choice2": "engL"
+    }, 
+    {
+        "pyccode": "067", 
+        "choice1": "chinL", 
+        "choice2": "engL"
+    }, 
+    {
+        "pyccode": "068", 
+        "choice1": "society", 
+        "choice2": "engine"
+    }, 
+    {
+        "pyccode": "069", 
+        "choice1": "phy", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "070", 
+        "choice1": "chinL", 
+        "choice2": "finance"
+    }, 
+    {
+        "pyccode": "071", 
+        "choice1": "edu", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "072", 
+        "choice1": "engine", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "073", 
+        "choice1": "math", 
+        "choice2": "engL"
+    }, 
+    {
+        "pyccode": "074", 
+        "choice1": "phy", 
+        "choice2": "society"
+    }, 
+    {
+        "pyccode": "075", 
+        "choice1": "edu", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "076", 
+        "choice1": "engL", 
+        "choice2": "medic"
+    }, 
+    {
+        "pyccode": "077", 
+        "choice1": "finance", 
+        "choice2": "phy"
+    }, 
+    {
+        "pyccode": "078", 
+        "choice1": "edu", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "079", 
+        "choice1": "it", 
+        "choice2": "phy"
+    }, 
+    {
+        "pyccode": "080", 
+        "choice1": "chinL", 
+        "choice2": "edu"
+    }, 
+    {
+        "pyccode": "081", 
+        "choice1": "math", 
+        "choice2": "society"
+    }, 
+    {
+        "pyccode": "082", 
+        "choice1": "phy", 
+        "choice2": "society"
+    }, 
+    {
+        "pyccode": "083", 
+        "choice1": "engL", 
+        "choice2": "edu"
+    }, 
+    {
+        "pyccode": "084", 
+        "choice1": "chinL", 
+        "choice2": "medic"
+    }, 
+    {
+        "pyccode": "085", 
+        "choice1": "chinL", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "086", 
+        "choice1": "finance", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "087", 
+        "choice1": "society", 
+        "choice2": "medic"
+    }, 
+    {
+        "pyccode": "088", 
+        "choice1": "engine", 
+        "choice2": "society"
+    }, 
+    {
+        "pyccode": "089", 
+        "choice1": "finance", 
+        "choice2": "engine"
+    }, 
+    {
+        "pyccode": "090", 
+        "choice1": "chinL", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "091", 
+        "choice1": "it", 
+        "choice2": "edu"
+    }, 
+    {
+        "pyccode": "092", 
+        "choice1": "it", 
+        "choice2": "engL"
+    }, 
+    {
+        "pyccode": "093", 
+        "choice1": "edu", 
+        "choice2": "engine"
+    }, 
+    {
+        "pyccode": "094", 
+        "choice1": "finance", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "095", 
+        "choice1": "engine", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "096", 
+        "choice1": "medic", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "097", 
+        "choice1": "engL", 
+        "choice2": "engine"
+    }, 
+    {
+        "pyccode": "098", 
+        "choice1": "it", 
+        "choice2": "medic"
+    }, 
+    {
+        "pyccode": "099", 
+        "choice1": "medic", 
+        "choice2": "society"
+    }, 
+    {
+        "pyccode": "100", 
+        "choice1": "engine", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "101", 
+        "choice1": "it", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "102", 
+        "choice1": "engine", 
+        "choice2": "edu"
+    }, 
+    {
+        "pyccode": "103", 
+        "choice1": "engL", 
+        "choice2": "engine"
+    }, 
+    {
+        "pyccode": "104", 
+        "choice1": "finance", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "105", 
+        "choice1": "chinL", 
+        "choice2": "engL"
+    }, 
+    {
+        "pyccode": "106", 
+        "choice1": "chinL", 
+        "choice2": "engine"
+    }, 
+    {
+        "pyccode": "107", 
+        "choice1": "medic", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "108", 
+        "choice1": "math", 
+        "choice2": "edu"
+    }, 
+    {
+        "pyccode": "109", 
+        "choice1": "math", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "110", 
+        "choice1": "chinL", 
+        "choice2": "edu"
+    }, 
+    {
+        "pyccode": "111", 
+        "choice1": "society", 
+        "choice2": "phy"
+    }, 
+    {
+        "pyccode": "112", 
+        "choice1": "phy", 
+        "choice2": "medic"
+    }, 
+    {
+        "pyccode": "113", 
+        "choice1": "math", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "114", 
+        "choice1": "finance", 
+        "choice2": "engine"
+    }, 
+    {
+        "pyccode": "115", 
+        "choice1": "phy", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "116", 
+        "choice1": "math", 
+        "choice2": "society"
+    }, 
+    {
+        "pyccode": "117", 
+        "choice1": "medic", 
+        "choice2": "finance"
+    }, 
+    {
+        "pyccode": "118", 
+        "choice1": "engL", 
+        "choice2": "phy"
+    }, 
+    {
+        "pyccode": "119", 
+        "choice1": "edu", 
+        "choice2": "engL"
+    }, 
+    {
+        "pyccode": "120", 
+        "choice1": "society", 
+        "choice2": "chinL"
+    }, 
+    {
+        "pyccode": "121", 
+        "choice1": "engine", 
+>>>>>>> 18bf8106ea18e177ae729bb878d0c0c707a1b2c9
+        "choice2": "society"
+    }, 
+    {
+<<<<<<< HEAD
         "pyccode": "115",
         "choice1": "edu",
         "choice2": "medic"
@@ -698,5 +1304,100 @@
         "pyccode": "140",
         "choice1": "engine",
         "choice2": "edu"
+=======
+        "pyccode": "122", 
+        "choice1": "engL", 
+        "choice2": "edu"
+    }, 
+    {
+        "pyccode": "123", 
+        "choice1": "chinL", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "124", 
+        "choice1": "engine", 
+        "choice2": "finance"
+    }, 
+    {
+        "pyccode": "125", 
+        "choice1": "math", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "126", 
+        "choice1": "engL", 
+        "choice2": "edu"
+    }, 
+    {
+        "pyccode": "127", 
+        "choice1": "chinL", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "128", 
+        "choice1": "medic", 
+        "choice2": "engL"
+    }, 
+    {
+        "pyccode": "129", 
+        "choice1": "chinL", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "130", 
+        "choice1": "finance", 
+        "choice2": "it"
+    }, 
+    {
+        "pyccode": "131", 
+        "choice1": "society", 
+        "choice2": "phy"
+    }, 
+    {
+        "pyccode": "132", 
+        "choice1": "medic", 
+        "choice2": "society"
+    }, 
+    {
+        "pyccode": "133", 
+        "choice1": "it", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "134", 
+        "choice1": "phy", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "135", 
+        "choice1": "math", 
+        "choice2": "edu"
+    }, 
+    {
+        "pyccode": "136", 
+        "choice1": "finance", 
+        "choice2": "engine"
+    }, 
+    {
+        "pyccode": "137", 
+        "choice1": "finance", 
+        "choice2": "engL"
+    }, 
+    {
+        "pyccode": "138", 
+        "choice1": "engine", 
+        "choice2": "medic"
+    }, 
+    {
+        "pyccode": "139", 
+        "choice1": "chinL", 
+        "choice2": "math"
+    }, 
+    {
+        "pyccode": "140", 
+        "choice1": "chinL", 
+        "choice2": "finance"
+>>>>>>> 18bf8106ea18e177ae729bb878d0c0c707a1b2c9
     }
 ]
