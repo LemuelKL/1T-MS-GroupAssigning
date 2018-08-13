@@ -7,7 +7,6 @@ nStudent = 140
 nCourse = 40
 nSubj = 10
 
-# Weighting Constants
 WC_nAvSubj = 10
 WC_nConnection = 7
 
@@ -62,7 +61,7 @@ def constructNCoursesBySubjType(subjType, nCourseToConstruct):
         tempCourse = course(subjType, i+1, None, None, nCourseToConstruct)
         ret.append(tempCourse)
     return ret
-#####################################################################################
+
 def genRandomStudents():
     toRet = []
     pyccodes = ["%03d" % x for x in range(1, nStudent + 1)]
@@ -95,14 +94,18 @@ def genRandomTeachers():
         toRet.append(t)
     return toRet
 
-# TODO, NOT NEEDED RN
 def genRamdomCources():
-    toRet = []
-    c = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
-    for i in range (0, nCourse):
-        n = random.randint()
-        constructNCoursesBySubjType()
-
+    i = 0
+    toRetObjs = []
+    toRetObjStrs = []
+    for subj in subjMaster:
+        listOfCoursesOfSameType = constructNCoursesBySubjType(subj, nCourseMaster[i])
+        for coursesOfSameType in listOfCoursesOfSameType:
+            toRetObjs.append(coursesOfSameType)
+            toRetObjStrs.append(flattenObjProp2Str(coursesOfSameType))
+        i += 1
+    return [toRetObjs, toRetObjStrs]
+    
 def dump(obj):
   for attr in dir(obj):
     print("obj.%s = %r" % (attr, getattr(obj, attr)))
@@ -186,16 +189,9 @@ def main():
     writeStudentData2Json('data/studentInfo.json', listOfStudentObjs)
     writeTeacherData2Json('data/teacherInfo.json', listOfTeacherObjs)
 
-    i = 0
-    ret = []
-    for subj in subjMaster:
-        listOfCoursesOfSameType = constructNCoursesBySubjType(subj, nCourseMaster[i])
-        for coursesOfSameType in listOfCoursesOfSameType:
-            ret.append(flattenObjProp2Str(coursesOfSameType))
-        i += 1
-
-    ret = objStr2JsonStr(str(ret))
-    print(ret)
-    writeJson('data/coursesInfo.json', ret)
+    ret = genRamdomCources()
+    listOfCrouseObjs = ret[0]
+    ret[1] = objStr2JsonStr(str(ret[1]))
+    writeJson('data/coursesInfo.json', ret[1])
     
 main()
