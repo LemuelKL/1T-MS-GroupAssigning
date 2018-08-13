@@ -183,7 +183,7 @@ def objStr2JsonStr(string):
 def main():
     listOfStudentObjs = genRandomStudents()
     listOfTeacherObjs = genRandomTeachers()
-    writeStudentData2Json('data/studentChoices.json', listOfStudentObjs)
+    writeStudentData2Json('data/studentInfo.json', listOfStudentObjs)
     writeTeacherData2Json('data/teacherInfo.json', listOfTeacherObjs)
 
     i = 0
@@ -196,6 +196,6 @@ def main():
 
     ret = objStr2JsonStr(str(ret))
     print(ret)
-    writeJson('data/test.json', ret)
+    writeJson('data/coursesInfo.json', ret)
     
 main()
