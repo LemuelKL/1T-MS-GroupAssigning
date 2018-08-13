@@ -1,0 +1,322 @@
+[
+    {
+        "subjType": "chinL",
+        "idNumber": 1,
+        "idName": "chinL_1",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 1
+    },
+    {
+        "subjType": "engL",
+        "idNumber": 1,
+        "idName": "engL_1",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 1
+    },
+    {
+        "subjType": "edu",
+        "idNumber": 1,
+        "idName": "edu_1",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 6
+    },
+    {
+        "subjType": "edu",
+        "idNumber": 2,
+        "idName": "edu_2",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 6
+    },
+    {
+        "subjType": "edu",
+        "idNumber": 3,
+        "idName": "edu_3",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 6
+    },
+    {
+        "subjType": "edu",
+        "idNumber": 4,
+        "idName": "edu_4",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 6
+    },
+    {
+        "subjType": "edu",
+        "idNumber": 5,
+        "idName": "edu_5",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 6
+    },
+    {
+        "subjType": "edu",
+        "idNumber": 6,
+        "idName": "edu_6",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 6
+    },
+    {
+        "subjType": "engine",
+        "idNumber": 1,
+        "idName": "engine_1",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 7
+    },
+    {
+        "subjType": "engine",
+        "idNumber": 2,
+        "idName": "engine_2",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 7
+    },
+    {
+        "subjType": "engine",
+        "idNumber": 3,
+        "idName": "engine_3",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 7
+    },
+    {
+        "subjType": "engine",
+        "idNumber": 4,
+        "idName": "engine_4",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 7
+    },
+    {
+        "subjType": "engine",
+        "idNumber": 5,
+        "idName": "engine_5",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 7
+    },
+    {
+        "subjType": "engine",
+        "idNumber": 6,
+        "idName": "engine_6",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 7
+    },
+    {
+        "subjType": "engine",
+        "idNumber": 7,
+        "idName": "engine_7",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 7
+    },
+    {
+        "subjType": "math",
+        "idNumber": 1,
+        "idName": "math_1",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 2
+    },
+    {
+        "subjType": "math",
+        "idNumber": 2,
+        "idName": "math_2",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 2
+    },
+    {
+        "subjType": "society",
+        "idNumber": 1,
+        "idName": "society_1",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 6
+    },
+    {
+        "subjType": "society",
+        "idNumber": 2,
+        "idName": "society_2",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 6
+    },
+    {
+        "subjType": "society",
+        "idNumber": 3,
+        "idName": "society_3",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 6
+    },
+    {
+        "subjType": "society",
+        "idNumber": 4,
+        "idName": "society_4",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 6
+    },
+    {
+        "subjType": "society",
+        "idNumber": 5,
+        "idName": "society_5",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 6
+    },
+    {
+        "subjType": "society",
+        "idNumber": 6,
+        "idName": "society_6",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 6
+    },
+    {
+        "subjType": "finance",
+        "idNumber": 1,
+        "idName": "finance_1",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 8
+    },
+    {
+        "subjType": "finance",
+        "idNumber": 2,
+        "idName": "finance_2",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 8
+    },
+    {
+        "subjType": "finance",
+        "idNumber": 3,
+        "idName": "finance_3",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 8
+    },
+    {
+        "subjType": "finance",
+        "idNumber": 4,
+        "idName": "finance_4",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 8
+    },
+    {
+        "subjType": "finance",
+        "idNumber": 5,
+        "idName": "finance_5",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 8
+    },
+    {
+        "subjType": "finance",
+        "idNumber": 6,
+        "idName": "finance_6",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 8
+    },
+    {
+        "subjType": "finance",
+        "idNumber": 7,
+        "idName": "finance_7",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 8
+    },
+    {
+        "subjType": "finance",
+        "idNumber": 8,
+        "idName": "finance_8",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 8
+    },
+    {
+        "subjType": "it",
+        "idNumber": 1,
+        "idName": "it_1",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 2
+    },
+    {
+        "subjType": "it",
+        "idNumber": 2,
+        "idName": "it_2",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 2
+    },
+    {
+        "subjType": "phy",
+        "idNumber": 1,
+        "idName": "phy_1",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 2
+    },
+    {
+        "subjType": "phy",
+        "idNumber": 2,
+        "idName": "phy_2",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 2
+    },
+    {
+        "subjType": "medic",
+        "idNumber": 1,
+        "idName": "medic_1",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 5
+    },
+    {
+        "subjType": "medic",
+        "idNumber": 2,
+        "idName": "medic_2",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 5
+    },
+    {
+        "subjType": "medic",
+        "idNumber": 3,
+        "idName": "medic_3",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 5
+    },
+    {
+        "subjType": "medic",
+        "idNumber": 4,
+        "idName": "medic_4",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 5
+    },
+    {
+        "subjType": "medic",
+        "idNumber": 5,
+        "idName": "medic_5",
+        "nAvTeacher": "None",
+        "nAvStudent": "None",
+        "nID": 5
+    }
+]

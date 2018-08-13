@@ -11,28 +11,8 @@ nSubj = 10
 WC_nAvSubj = 10
 WC_nConnection = 7
 
-# Example of subj type names
-# chinL
-# engL
-# edu
-# engine
-# math
-# society
-# finance
-# it
-# phy
-# medic
-subjMaster = ["chinL", "engL", "edu", "engine", "math", "society", "finance", "it", "phy", "medic"]
-
-# Example of course idName
-# chinL_1
-# engL_1
-# edu_1
-# edu_2
-# math_1
-# society_1
-# society_2
-# society_3
+subjMaster =    ["chinL", "engL", "edu", "engine", "math", "society", "finance", "it", "phy", "medic"]
+nCourseMaster = [ 1,       1,      6,     7,        2,      6,         8,         2,    2,     5     ]
 
 listOfStudentObjs = []
 listOfTeacherObjs = []
@@ -50,6 +30,7 @@ class teacher:
         if not nAvSubj == None or not nConnection == None:
             avIndex = nAvSubj * WC_nAvSubj + nConnection * WC_nConnection
             return 'SUCCESS'
+        return 'FAILED'
 
 class student:
     avIndex = None
@@ -63,9 +44,10 @@ class student:
         if not nAvSubj == None or not nConnection == None:
             avIndex = nAvSubj * WC_nAvSubj + nConnection * WC_nConnection
             return 'SUCCESS'
-
+        return 'FAILED'
+        
 class course:
-    max_nStudent = 5
+    max_nStudent = 4
     def __init__(self, subjType, idNumber, nAvTeacher, nAvStudent, nID):
         self.subjType = subjType
         self.idNumber = idNumber
@@ -80,7 +62,7 @@ def constructNCoursesBySubjType(subjType, nCourseToConstruct):
         tempCourse = course(subjType, i+1, None, None, nCourseToConstruct)
         ret.append(tempCourse)
     return ret
-
+#####################################################################################
 def genRandomStudents():
     toRet = []
     pyccodes = ["%03d" % x for x in range(1, nStudent + 1)]
@@ -90,7 +72,6 @@ def genRandomStudents():
         toRet.append(s)
     return toRet
 
-#TODO	
 def readListOfTeachersFromFile():
     with open("data/listOfTeachers.txt") as f:
         content = f.readlines()
@@ -114,16 +95,18 @@ def genRandomTeachers():
         toRet.append(t)
     return toRet
 
+# TODO, NOT NEEDED RN
+def genRamdomCources():
+    toRet = []
+    c = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+    for i in range (0, nCourse):
+        n = random.randint()
+        constructNCoursesBySubjType()
+
 def dump(obj):
   for attr in dir(obj):
     print("obj.%s = %r" % (attr, getattr(obj, attr)))
     
-def main():
-    listOfStudentObjs = genRandomStudents()
-    listOfTeacherObjs = genRandomTeachers()
-    dump(listOfTeacherObjs[0])
-    writeTeacherData2Json('data/teacherInfo.json', listOfTeacherObjs)
-
 def studentObjs2Json(objs):
     outStr = '['
     for obj in objs:
@@ -156,7 +139,6 @@ def teacherObjs2Json(objs):
 
 def flatten2DSubjs(listOfStrs):
     result = listOfStrs[0]
-    print(result)
     for i in range(1, len(listOfStrs)):
         result += ', '
         result += listOfStrs[i]   
@@ -172,11 +154,48 @@ def writeJson(filename, jsonString):
         json.dump(parsed, outfile, indent = 4, sort_keys = False)
 
 def writeStudentData2Json(filename, objs):
-    jsonString = teacherObjs2Json(objs)
+    jsonString = studentObjs2Json(objs)
     writeJson(filename, jsonString)
 
 def writeTeacherData2Json(filename, objs):
     jsonString = teacherObjs2Json(objs)
     writeJson(filename, jsonString)
-        
+
+def flattenObjProp2Str(obj):
+    return(obj.__dict__)
+
+def objStr2JsonStr(string):
+    retStr = ""
+    skip = 0
+    for i in range (0, len(string)):
+        if skip:
+            skip -= 1
+            continue 
+        if string[i] == '\'':
+            retStr += '"'
+        elif string[i] == ' ' and string[i+1] == 'N' and string[i+2] == 'o' and string[i+3] == 'n' and string[i+4] == 'e':
+            retStr += ' "None"'
+            skip = 4
+        else:
+            retStr += string[i]
+    return retStr
+
+def main():
+    listOfStudentObjs = genRandomStudents()
+    listOfTeacherObjs = genRandomTeachers()
+    writeStudentData2Json('data/studentChoices.json', listOfStudentObjs)
+    writeTeacherData2Json('data/teacherInfo.json', listOfTeacherObjs)
+
+    i = 0
+    ret = []
+    for subj in subjMaster:
+        listOfCoursesOfSameType = constructNCoursesBySubjType(subj, nCourseMaster[i])
+        for coursesOfSameType in listOfCoursesOfSameType:
+            ret.append(flattenObjProp2Str(coursesOfSameType))
+        i += 1
+
+    ret = objStr2JsonStr(str(ret))
+    print(ret)
+    writeJson('data/test.json', ret)
+    
 main()
