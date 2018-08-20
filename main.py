@@ -93,17 +93,21 @@ def genRandomTeachers():
         t = teacher(teacherIdName, avSubjs)
         toRet.append(t)
     return toRet
-
+    
 def genRamdomCources():
+    idNo = 1
     i = 0
     toRetObjs = []
     toRetObjStrs = []
     for subj in subjMaster:
         listOfCoursesOfSameType = constructNCoursesBySubjType(subj, nCourseMaster[i])
         for coursesOfSameType in listOfCoursesOfSameType:
+            coursesOfSameType.idNumber = idNo
+            idNo += 1
             toRetObjs.append(coursesOfSameType)
             toRetObjStrs.append(flattenObjProp2Str(coursesOfSameType))
         i += 1
+        
     return [toRetObjs, toRetObjStrs]
     
 def dump(obj):

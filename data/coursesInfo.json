@@ -9,7 +9,7 @@
     },
     {
         "subjType": "engL",
-        "idNumber": 1,
+        "idNumber": 2,
         "idName": "engL_1",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -17,7 +17,7 @@
     },
     {
         "subjType": "edu",
-        "idNumber": 1,
+        "idNumber": 3,
         "idName": "edu_1",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -25,7 +25,7 @@
     },
     {
         "subjType": "edu",
-        "idNumber": 2,
+        "idNumber": 4,
         "idName": "edu_2",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -33,7 +33,7 @@
     },
     {
         "subjType": "edu",
-        "idNumber": 3,
+        "idNumber": 5,
         "idName": "edu_3",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -41,7 +41,7 @@
     },
     {
         "subjType": "edu",
-        "idNumber": 4,
+        "idNumber": 6,
         "idName": "edu_4",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -49,7 +49,7 @@
     },
     {
         "subjType": "edu",
-        "idNumber": 5,
+        "idNumber": 7,
         "idName": "edu_5",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -57,7 +57,7 @@
     },
     {
         "subjType": "edu",
-        "idNumber": 6,
+        "idNumber": 8,
         "idName": "edu_6",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -65,7 +65,7 @@
     },
     {
         "subjType": "engine",
-        "idNumber": 1,
+        "idNumber": 9,
         "idName": "engine_1",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -73,7 +73,7 @@
     },
     {
         "subjType": "engine",
-        "idNumber": 2,
+        "idNumber": 10,
         "idName": "engine_2",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -81,7 +81,7 @@
     },
     {
         "subjType": "engine",
-        "idNumber": 3,
+        "idNumber": 11,
         "idName": "engine_3",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -89,7 +89,7 @@
     },
     {
         "subjType": "engine",
-        "idNumber": 4,
+        "idNumber": 12,
         "idName": "engine_4",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -97,7 +97,7 @@
     },
     {
         "subjType": "engine",
-        "idNumber": 5,
+        "idNumber": 13,
         "idName": "engine_5",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -105,7 +105,7 @@
     },
     {
         "subjType": "engine",
-        "idNumber": 6,
+        "idNumber": 14,
         "idName": "engine_6",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -113,7 +113,7 @@
     },
     {
         "subjType": "engine",
-        "idNumber": 7,
+        "idNumber": 15,
         "idName": "engine_7",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -121,7 +121,7 @@
     },
     {
         "subjType": "math",
-        "idNumber": 1,
+        "idNumber": 16,
         "idName": "math_1",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -129,7 +129,7 @@
     },
     {
         "subjType": "math",
-        "idNumber": 2,
+        "idNumber": 17,
         "idName": "math_2",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -137,7 +137,7 @@
     },
     {
         "subjType": "society",
-        "idNumber": 1,
+        "idNumber": 18,
         "idName": "society_1",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -145,7 +145,7 @@
     },
     {
         "subjType": "society",
-        "idNumber": 2,
+        "idNumber": 19,
         "idName": "society_2",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -153,7 +153,7 @@
     },
     {
         "subjType": "society",
-        "idNumber": 3,
+        "idNumber": 20,
         "idName": "society_3",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -161,7 +161,7 @@
     },
     {
         "subjType": "society",
-        "idNumber": 4,
+        "idNumber": 21,
         "idName": "society_4",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -169,7 +169,7 @@
     },
     {
         "subjType": "society",
-        "idNumber": 5,
+        "idNumber": 22,
         "idName": "society_5",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -177,7 +177,7 @@
     },
     {
         "subjType": "society",
-        "idNumber": 6,
+        "idNumber": 23,
         "idName": "society_6",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -185,7 +185,7 @@
     },
     {
         "subjType": "finance",
-        "idNumber": 1,
+        "idNumber": 24,
         "idName": "finance_1",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -193,7 +193,7 @@
     },
     {
         "subjType": "finance",
-        "idNumber": 2,
+        "idNumber": 25,
         "idName": "finance_2",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -201,7 +201,7 @@
     },
     {
         "subjType": "finance",
-        "idNumber": 3,
+        "idNumber": 26,
         "idName": "finance_3",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -209,7 +209,7 @@
     },
     {
         "subjType": "finance",
-        "idNumber": 4,
+        "idNumber": 27,
         "idName": "finance_4",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -217,7 +217,7 @@
     },
     {
         "subjType": "finance",
-        "idNumber": 5,
+        "idNumber": 28,
         "idName": "finance_5",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -225,7 +225,7 @@
     },
     {
         "subjType": "finance",
-        "idNumber": 6,
+        "idNumber": 29,
         "idName": "finance_6",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -233,7 +233,7 @@
     },
     {
         "subjType": "finance",
-        "idNumber": 7,
+        "idNumber": 30,
         "idName": "finance_7",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -241,7 +241,7 @@
     },
     {
         "subjType": "finance",
-        "idNumber": 8,
+        "idNumber": 31,
         "idName": "finance_8",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -249,7 +249,7 @@
     },
     {
         "subjType": "it",
-        "idNumber": 1,
+        "idNumber": 32,
         "idName": "it_1",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -257,7 +257,7 @@
     },
     {
         "subjType": "it",
-        "idNumber": 2,
+        "idNumber": 33,
         "idName": "it_2",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -265,7 +265,7 @@
     },
     {
         "subjType": "phy",
-        "idNumber": 1,
+        "idNumber": 34,
         "idName": "phy_1",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -273,7 +273,7 @@
     },
     {
         "subjType": "phy",
-        "idNumber": 2,
+        "idNumber": 35,
         "idName": "phy_2",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -281,7 +281,7 @@
     },
     {
         "subjType": "medic",
-        "idNumber": 1,
+        "idNumber": 36,
         "idName": "medic_1",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -289,7 +289,7 @@
     },
     {
         "subjType": "medic",
-        "idNumber": 2,
+        "idNumber": 37,
         "idName": "medic_2",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -297,7 +297,7 @@
     },
     {
         "subjType": "medic",
-        "idNumber": 3,
+        "idNumber": 38,
         "idName": "medic_3",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -305,7 +305,7 @@
     },
     {
         "subjType": "medic",
-        "idNumber": 4,
+        "idNumber": 39,
         "idName": "medic_4",
         "nAvTeacher": "None",
         "nAvStudent": "None",
@@ -313,7 +313,7 @@
     },
     {
         "subjType": "medic",
-        "idNumber": 5,
+        "idNumber": 40,
         "idName": "medic_5",
         "nAvTeacher": "None",
         "nAvStudent": "None",
