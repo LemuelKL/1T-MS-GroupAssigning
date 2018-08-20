@@ -2,201 +2,201 @@
     {
         "idName": "asn",
         "nAvSubj": "2",
-        "avSubjs": "chinL, engL"
+        "avSubjs": "engine, phy"
     },
     {
         "idName": "ccke",
-        "nAvSubj": "3",
-        "avSubjs": "engine, edu, engL"
+        "nAvSubj": "4",
+        "avSubjs": "finance, math, chinL, phy"
     },
     {
         "idName": "cck",
         "nAvSubj": "4",
-        "avSubjs": "phy, medic, engL, society"
+        "avSubjs": "society, it, engine, finance"
     },
     {
         "idName": "cfke",
-        "nAvSubj": "4",
-        "avSubjs": "it, edu, engL, engine"
-    },
-    {
-        "idName": "ckh",
-        "nAvSubj": "4",
-        "avSubjs": "medic, chinL, society, engine"
-    },
-    {
-        "idName": "clf",
-        "nAvSubj": "4",
-        "avSubjs": "chinL, engine, society, medic"
-    },
-    {
-        "idName": "cpf",
-        "nAvSubj": "4",
-        "avSubjs": "engL, phy, engine, medic"
-    },
-    {
-        "idName": "csy1",
-        "nAvSubj": "4",
-        "avSubjs": "society, phy, medic, finance"
-    },
-    {
-        "idName": "csy",
-        "nAvSubj": "4",
-        "avSubjs": "medic, society, math, edu"
-    },
-    {
-        "idName": "ctc",
-        "nAvSubj": "3",
-        "avSubjs": "math, chinL, finance"
-    },
-    {
-        "idName": "cwy1",
-        "nAvSubj": "1",
-        "avSubjs": "society"
-    },
-    {
-        "idName": "cmy",
-        "nAvSubj": "4",
-        "avSubjs": "chinL, engL, engine, it"
-    },
-    {
-        "idName": "css",
-        "nAvSubj": "4",
-        "avSubjs": "engL, it, chinL, medic"
-    },
-    {
-        "idName": "ctn",
-        "nAvSubj": "4",
-        "avSubjs": "phy, society, edu, math"
-    },
-    {
-        "idName": "ckw",
-        "nAvSubj": "3",
-        "avSubjs": "engine, engL, it"
-    },
-    {
-        "idName": "cpwr",
-        "nAvSubj": "3",
-        "avSubjs": "edu, finance, chinL"
-    },
-    {
-        "idName": "cwc",
-        "nAvSubj": "2",
-        "avSubjs": "society, it"
-    },
-    {
-        "idName": "ckhm",
-        "nAvSubj": "3",
-        "avSubjs": "society, edu, medic"
-    },
-    {
-        "idName": "kcsh",
-        "nAvSubj": "4",
-        "avSubjs": "math, medic, finance, chinL"
-    },
-    {
-        "idName": "chy",
-        "nAvSubj": "4",
-        "avSubjs": "edu, phy, finance, engL"
-    },
-    {
-        "idName": "ccfp",
-        "nAvSubj": "2",
-        "avSubjs": "edu, engL"
-    },
-    {
-        "idName": "cgt",
-        "nAvSubj": "4",
-        "avSubjs": "edu, finance, math, engL"
-    },
-    {
-        "idName": "hkt",
-        "nAvSubj": "3",
-        "avSubjs": "engL, math, finance"
-    },
-    {
-        "idName": "hky",
-        "nAvSubj": "1",
-        "avSubjs": "edu"
-    },
-    {
-        "idName": "hpk",
-        "nAvSubj": "3",
-        "avSubjs": "edu, engine, math"
-    },
-    {
-        "idName": "hyk",
-        "nAvSubj": "2",
-        "avSubjs": "medic, engine"
-    },
-    {
-        "idName": "hmw",
-        "nAvSubj": "3",
-        "avSubjs": "engL, it, math"
-    },
-    {
-        "idName": "hkc",
-        "nAvSubj": "4",
-        "avSubjs": "medic, engine, chinL, engL"
-    },
-    {
-        "idName": "hkl",
-        "nAvSubj": "2",
-        "avSubjs": "finance, society"
-    },
-    {
-        "idName": "hlp",
-        "nAvSubj": "4",
-        "avSubjs": "math, engine, edu, medic"
-    },
-    {
-        "idName": "hmw1",
-        "nAvSubj": "3",
-        "avSubjs": "edu, math, finance"
-    },
-    {
-        "idName": "insp",
-        "nAvSubj": "3",
-        "avSubjs": "medic, chinL, engine"
-    },
-    {
-        "idName": "ikf",
-        "nAvSubj": "1",
-        "avSubjs": "engL"
-    },
-    {
-        "idName": "icm",
-        "nAvSubj": "1",
-        "avSubjs": "phy"
-    },
-    {
-        "idName": "kth",
-        "nAvSubj": "2",
-        "avSubjs": "engL, chinL"
-    },
-    {
-        "idName": "ksl",
         "nAvSubj": "1",
         "avSubjs": "chinL"
     },
     {
-        "idName": "kyc",
-        "nAvSubj": "1",
-        "avSubjs": "edu"
+        "idName": "ckh",
+        "nAvSubj": "3",
+        "avSubjs": "it, society, phy"
     },
     {
-        "idName": "lksl",
+        "idName": "clf",
+        "nAvSubj": "4",
+        "avSubjs": "society, finance, medic, engL"
+    },
+    {
+        "idName": "cpf",
+        "nAvSubj": "2",
+        "avSubjs": "phy, edu"
+    },
+    {
+        "idName": "csy1",
+        "nAvSubj": "2",
+        "avSubjs": "finance, medic"
+    },
+    {
+        "idName": "csy",
+        "nAvSubj": "1",
+        "avSubjs": "it"
+    },
+    {
+        "idName": "ctc",
+        "nAvSubj": "3",
+        "avSubjs": "engL, edu, society"
+    },
+    {
+        "idName": "cwy1",
+        "nAvSubj": "2",
+        "avSubjs": "chinL, engine"
+    },
+    {
+        "idName": "cmy",
+        "nAvSubj": "2",
+        "avSubjs": "it, engL"
+    },
+    {
+        "idName": "css",
+        "nAvSubj": "2",
+        "avSubjs": "math, it"
+    },
+    {
+        "idName": "ctn",
+        "nAvSubj": "3",
+        "avSubjs": "society, math, chinL"
+    },
+    {
+        "idName": "ckw",
+        "nAvSubj": "3",
+        "avSubjs": "engL, chinL, phy"
+    },
+    {
+        "idName": "cpwr",
+        "nAvSubj": "2",
+        "avSubjs": "society, edu"
+    },
+    {
+        "idName": "cwc",
+        "nAvSubj": "1",
+        "avSubjs": "engL"
+    },
+    {
+        "idName": "ckhm",
+        "nAvSubj": "1",
+        "avSubjs": "engL"
+    },
+    {
+        "idName": "kcsh",
+        "nAvSubj": "1",
+        "avSubjs": "engL"
+    },
+    {
+        "idName": "chy",
+        "nAvSubj": "3",
+        "avSubjs": "finance, chinL, math"
+    },
+    {
+        "idName": "ccfp",
+        "nAvSubj": "4",
+        "avSubjs": "society, edu, engL, engine"
+    },
+    {
+        "idName": "cgt",
+        "nAvSubj": "2",
+        "avSubjs": "it, engL"
+    },
+    {
+        "idName": "hkt",
+        "nAvSubj": "2",
+        "avSubjs": "math, finance"
+    },
+    {
+        "idName": "hky",
+        "nAvSubj": "3",
+        "avSubjs": "medic, engine, math"
+    },
+    {
+        "idName": "hpk",
+        "nAvSubj": "2",
+        "avSubjs": "chinL, it"
+    },
+    {
+        "idName": "hyk",
+        "nAvSubj": "1",
+        "avSubjs": "engL"
+    },
+    {
+        "idName": "hmw",
+        "nAvSubj": "2",
+        "avSubjs": "medic, engine"
+    },
+    {
+        "idName": "hkc",
+        "nAvSubj": "2",
+        "avSubjs": "engine, society"
+    },
+    {
+        "idName": "hkl",
         "nAvSubj": "2",
         "avSubjs": "it, society"
     },
     {
-        "idName": "kkl",
+        "idName": "hlp",
+        "nAvSubj": "3",
+        "avSubjs": "chinL, edu, math"
+    },
+    {
+        "idName": "hmw1",
+        "nAvSubj": "2",
+        "avSubjs": "math, chinL"
+    },
+    {
+        "idName": "insp",
+        "nAvSubj": "2",
+        "avSubjs": "engL, engine"
+    },
+    {
+        "idName": "ikf",
+        "nAvSubj": "2",
+        "avSubjs": "edu, engL"
+    },
+    {
+        "idName": "icm",
         "nAvSubj": "4",
-        "avSubjs": "chinL, phy, engL, society"
+        "avSubjs": "chinL, medic, math, engine"
+    },
+    {
+        "idName": "kth",
+        "nAvSubj": "1",
+        "avSubjs": "engine"
+    },
+    {
+        "idName": "ksl",
+        "nAvSubj": "2",
+        "avSubjs": "engine, engL"
+    },
+    {
+        "idName": "kyc",
+        "nAvSubj": "2",
+        "avSubjs": "chinL, edu"
+    },
+    {
+        "idName": "lksl",
+        "nAvSubj": "1",
+        "avSubjs": "society"
+    },
+    {
+        "idName": "kkl",
+        "nAvSubj": "2",
+        "avSubjs": "engine, society"
     },
     {
         "idName": "lck",
         "nAvSubj": "3",
-        "avSubjs": "phy, finance, medic"
+        "avSubjs": "phy, medic, it"
     }
 ]

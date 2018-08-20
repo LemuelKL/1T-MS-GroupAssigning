@@ -17,6 +17,11 @@ listOfStudentObjs = []
 listOfTeacherObjs = []
 listOfCrouseObjs = []
 
+class connection:
+    def __init__(self, node1, node2):
+        self.node1 = node1  #T
+        self.node2 = node2  #S
+
 class teacher:
     avIndex = None
     nConnection = None
@@ -187,7 +192,22 @@ def objStr2JsonStr(string):
             retStr += string[i]
     return retStr
 
+def connectStudentsWithTeachersByCourses(students, teachers, courses):
+    connections = []
+    for subj in subjMaster:
+        print("Processing: ", subj)
+        subjStudents = [ s for s in students if s.choice1 == subj ]
+        subjTeachers = [ t for t in teachers if subj in t.avSubjs ]
+        subjCourses = [ c for c in courses if c.subjType == subj ]
+        for t in subjTeachers:
+            for s in subjStudents:
+                conn = connection(t, s)
+                connections.append(conn)
+    return connections
+
 def main():
+    #####   START Data Generation    #####
+    
     listOfStudentObjs = genRandomStudents()
     listOfTeacherObjs = genRandomTeachers()
     writeStudentData2Json('data/studentInfo.json', listOfStudentObjs)
@@ -197,5 +217,12 @@ def main():
     listOfCrouseObjs = ret[0]
     ret[1] = objStr2JsonStr(str(ret[1]))
     writeJson('data/coursesInfo.json', ret[1])
+
+    #####   END Data Generation    #####
+
+    connections = connectStudentsWithTeachersByCourses(listOfStudentObjs, listOfTeacherObjs, listOfCrouseObjs)
+    print(len(connections))
+
+    
     
 main()
