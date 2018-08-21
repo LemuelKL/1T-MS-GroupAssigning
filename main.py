@@ -210,7 +210,7 @@ def connectStudentsWithTeachersByCourses(students, teachers, courses):
                 connections.append(conn)
     return connections
         
-def main():
+def program():
     #####   START Data Generation    #####
     
     listOfStudentObjs = genRandomStudents()
@@ -227,19 +227,6 @@ def main():
 
     connections = connectStudentsWithTeachersByCourses(listOfStudentObjs, listOfTeacherObjs, listOfCrouseObjs)
     print("Number of Connections Associated: ", len(connections))
-
-    ##### DRAWING SHEET #####
-    # Each T node radius = 64, at 7 rows and 6 columns
-    #
-    # +  +  +  +  +  +
-    # +  +  +  +  +  +
-    # +  +  +  +  +  +
-    # +  +  +  +  +  +
-    # +  +  +  +  +  +
-    # +  +  +  +  +  +
-    # +  +  +  +
-    #
-    # Total 40 Teachers
 
     # TEACHER
     ci = 0
@@ -273,22 +260,83 @@ def main():
     for teacher in listOfTeacherObjs:
         teacher.calcAvIndex()
         
-    listOfTeacherObjs.sort(key=lambda t: t.avIndex, reverse=True)
-    
+    listOfTeacherObjs.sort(key=lambda t: t.avIndex, reverse=False)
+
+    '''
     for teacher in listOfTeacherObjs:
         print(teacher.idName, teacher.nAvSubj, teacher.nConnection, teacher.avIndex)
+    '''
 
-    ######
-    # STUDENT
+    ######  STUDENT  #####
+
     for student in listOfStudentObjs:
         connWithThisTeacher = [ c for c in connections if c.node2.value.pyccode == student.pyccode ]
         student.nConnection = len(connWithThisTeacher)
         student.calcAvIndex()
 
-    listOfTeacherObjs.sort(key=lambda t: t.avIndex, reverse=True)
+    listOfStudentObjs.sort(key=lambda t: t.avIndex, reverse=False)
 
+    '''
     for student in listOfStudentObjs:
-        print(student.pyccode, student.choice1, student.choice2, student.avIndex)
+        Print(student.pyccode, student.choice1, student.choice2, student.avIndex)
+    '''
+    
+    '''
+    Per teacher
+        Per avSubj by that teacher
+            select max 4 S from that Subj group, by lowest score, calc decision impact
+        Pick the decision which lower than overall avIndex by the least, write changes to external
+        write change includes: decrease all non-selected students' avIndexs
+
+    NOTE: Must first sort all avIndexs or else this will crumble
+    '''
+    
+    decisions = []
+    i = 0
+    for teacher in listOfTeacherObjs:
+        #print('')
+        #print(len(listOfStudentObjs), 'students and', len(connections), 'connections left to process')
+        decisions.append('')
+        minImpact = 99999
+        for subj in teacher.avSubjs:
+            studentWithThisSubjChoice = [ s for s in listOfStudentObjs if s.choice1 == subj ]
+            
+            print(teacher.idName, subj, len(studentWithThisSubjChoice), '|', ', '.join([ s.pyccode for s in studentWithThisSubjChoice ]))
+            studentWithThisSubjChoice.sort(key=lambda s: s.avIndex, reverse=False)
+            if len(studentWithThisSubjChoice) > 4:
+                t_selected = studentWithThisSubjChoice[0:4]
+            else:
+                t_selected = studentWithThisSubjChoice
+
+            #print('t_selected', [s.pyccode for s in t_selected])
+
+            impactedStudentNodes = [ c for c in connections if c.node1.value.idName == teacher.idName and not c.node2.value.choice1 == subj ]
+            impact = len(impactedStudentNodes)
+            if impact < minImpact:
+                if len(studentWithThisSubjChoice) > 4:
+                    selected = studentWithThisSubjChoice[0:4]
+                else:
+                    selected = studentWithThisSubjChoice
+                decisions[i] = teacher.idName + '_' + subj + '_' + '-'.join([ s.pyccode for s in selected ])
+                minImpact = impact
+                
+        listOfStudentObjs = [ s for s in listOfStudentObjs if s not in selected ]
+        connections = connectStudentsWithTeachersByCourses(listOfStudentObjs, listOfTeacherObjs, listOfCrouseObjs)       
+        i += 1
+
+    unassignedTeachers = [ d for d in decisions if d.endswith('_')]
+    return decisions, len(listOfStudentObjs), len(connections), len(unassignedTeachers)
+
+ret = program()
+decisions = ret[0]
+decisions = '\n'.join(decisions)
+print(decisions)
+print('There are', ret[1], 'students cannot be assigned')
+print('There are', ret[2], 'connections remaining')
+print('There are', ret[3], 'unassigned teachers not needed')
 
 
-main()
+
+
+
+
