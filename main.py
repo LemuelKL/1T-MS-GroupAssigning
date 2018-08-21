@@ -1,6 +1,8 @@
 import json
 from pprint import pprint
 import random
+import numpy as np
+import matplotlib.pyplot as plt
 
 nTeacher = 40
 nStudent = 140
@@ -17,36 +19,40 @@ listOfStudentObjs = []
 listOfTeacherObjs = []
 listOfCrouseObjs = []
 
-class connection:
-    def __init__(self, node1, node2):
-        self.node1 = node1  #T
-        self.node2 = node2  #S
+class node:
+    def __init__(self, value):
+        self.value = value
+
+class connection: 
+    def __init__(self, n1, n2):
+        self.node1 = node(n1)
+        self.node2 = node(n2)
 
 class teacher:
-    avIndex = None
-    nConnection = None
     def __init__(self, idName, avSubjs):
         self.idName = idName
         self.nAvSubj = len(avSubjs)
         self.avSubjs = avSubjs
+        self.avIndex = None
+        self.nConnection = None
 
-    def calcAvIndex():
-        if not nAvSubj == None or not nConnection == None:
-            avIndex = nAvSubj * WC_nAvSubj + nConnection * WC_nConnection
+    def calcAvIndex(self):
+        if not self.nAvSubj == None or not self.nConnection == None:
+            self.avIndex = self.nAvSubj * WC_nAvSubj + self.nConnection * WC_nConnection
             return 'SUCCESS'
         return 'FAILED'
 
 class student:
-    avIndex = None
-    nConnection = None
     def __init__(self, pyccode, choice1, choice2):
         self.pyccode = pyccode
         self.choice1 = choice1
         self.choice2 = choice2
+        self.avIndex = None
+        self.nConnection = None
 
-    def calcAvIndex():
-        if not nAvSubj == None or not nConnection == None:
-            avIndex = nAvSubj * WC_nAvSubj + nConnection * WC_nConnection
+    def calcAvIndex(self):
+        if not self.nConnection == None:
+            self.avIndex = self.nConnection
             return 'SUCCESS'
         return 'FAILED'
         
@@ -195,7 +201,6 @@ def objStr2JsonStr(string):
 def connectStudentsWithTeachersByCourses(students, teachers, courses):
     connections = []
     for subj in subjMaster:
-        print("Processing: ", subj)
         subjStudents = [ s for s in students if s.choice1 == subj ]
         subjTeachers = [ t for t in teachers if subj in t.avSubjs ]
         subjCourses = [ c for c in courses if c.subjType == subj ]
@@ -204,7 +209,7 @@ def connectStudentsWithTeachersByCourses(students, teachers, courses):
                 conn = connection(t, s)
                 connections.append(conn)
     return connections
-
+        
 def main():
     #####   START Data Generation    #####
     
@@ -221,8 +226,69 @@ def main():
     #####   END Data Generation    #####
 
     connections = connectStudentsWithTeachersByCourses(listOfStudentObjs, listOfTeacherObjs, listOfCrouseObjs)
-    print(len(connections))
+    print("Number of Connections Associated: ", len(connections))
 
+    ##### DRAWING SHEET #####
+    # Each T node radius = 64, at 7 rows and 6 columns
+    #
+    # +  +  +  +  +  +
+    # +  +  +  +  +  +
+    # +  +  +  +  +  +
+    # +  +  +  +  +  +
+    # +  +  +  +  +  +
+    # +  +  +  +  +  +
+    # +  +  +  +
+    #
+    # Total 40 Teachers
+
+    # TEACHER
+    ci = 0
+    ri = 0
+    result = []
+    for teacher in listOfTeacherObjs:
+        connWithThisTeacher = [ c for c in connections if c.node1.value.idName == teacher.idName ]
+        nConns = 0
+        for conn in connWithThisTeacher: 
+            conn.node1.r = 64
+            conn.node1.x = 64 + 64*2*ci
+            conn.node1.y = 64 + 64*2*ri
+            result.append(conn)
+            nConns += 1
+
+        teacher.nConnection = nConns
+            
+        if ci >= 5:
+            ci = -1
+            ri += 1  
+        ci += 1
+
+    print(len(result))
+    x = [ conn.node1.x for conn in result ]
+    y = [ conn.node1.y for conn in result ]
+
+    plt.plot(x, y, 'ro')
+    plt.axis([0, 1000, 0, 1000])
+    plt.show()
+
+    for teacher in listOfTeacherObjs:
+        teacher.calcAvIndex()
+        
+    listOfTeacherObjs.sort(key=lambda t: t.avIndex, reverse=True)
     
-    
+    for teacher in listOfTeacherObjs:
+        print(teacher.idName, teacher.nAvSubj, teacher.nConnection, teacher.avIndex)
+
+    ######
+    # STUDENT
+    for student in listOfStudentObjs:
+        connWithThisTeacher = [ c for c in connections if c.node2.value.pyccode == student.pyccode ]
+        student.nConnection = len(connWithThisTeacher)
+        student.calcAvIndex()
+
+    listOfTeacherObjs.sort(key=lambda t: t.avIndex, reverse=True)
+
+    for student in listOfStudentObjs:
+        print(student.pyccode, student.choice1, student.choice2, student.avIndex)
+
+
 main()
