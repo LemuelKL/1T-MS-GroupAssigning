@@ -1,23 +1,21 @@
 import json
-from pprint import pprint
 import random
 import numpy as np
 import matplotlib.pyplot as plt
 
-nTeacher = 40
-nStudent = 140
-nCourse = 40
-nSubj = 10
-
-WC_nAvSubj = 10
-WC_nConnection = 7
+DEBUG_MODE = False
 
 subjMaster =    ["chinL", "engL", "edu", "engine", "math", "society", "finance", "it", "phy", "medic"]
 nCourseMaster = [ 1,       1,      6,     7,        2,      6,         8,         2,    2,     5     ]
 
-listOfStudentObjs = []
-listOfTeacherObjs = []
-listOfCrouseObjs = []
+# Please don't touch these, yet.
+nTeacher = 40
+nStudent = 140
+nCourse = 40
+nSubj = len(subjMaster)
+
+WC_nAvSubj = 10
+WC_nConnection = 7
 
 class node:
     def __init__(self, value):
@@ -253,19 +251,20 @@ def program():
     x = [ conn.node1.x for conn in result ]
     y = [ conn.node1.y for conn in result ]
 
-    plt.plot(x, y, 'ro')
-    plt.axis([0, 1000, 0, 1000])
-    plt.show()
+    if DEBUG_MODE:
+        plt.plot(x, y, 'ro')
+        plt.axis([0, 1000, 0, 1000])
+        plt.show()
+
 
     for teacher in listOfTeacherObjs:
         teacher.calcAvIndex()
         
     listOfTeacherObjs.sort(key=lambda t: t.avIndex, reverse=False)
 
-    '''
-    for teacher in listOfTeacherObjs:
-        print(teacher.idName, teacher.nAvSubj, teacher.nConnection, teacher.avIndex)
-    '''
+    if DEBUG_MODE:
+        for teacher in listOfTeacherObjs:
+            print(teacher.idName, teacher.nAvSubj, teacher.nConnection, teacher.avIndex)
 
     ######  STUDENT  #####
 
@@ -276,10 +275,9 @@ def program():
 
     listOfStudentObjs.sort(key=lambda t: t.avIndex, reverse=False)
 
-    '''
-    for student in listOfStudentObjs:
-        Print(student.pyccode, student.choice1, student.choice2, student.avIndex)
-    '''
+    if DEBUG_MODE:
+        for student in listOfStudentObjs:
+            Print(student.pyccode, student.choice1, student.choice2, student.avIndex)
     
     '''
     Per teacher
@@ -294,21 +292,24 @@ def program():
     decisions = []
     i = 0
     for teacher in listOfTeacherObjs:
-        #print('')
-        #print(len(listOfStudentObjs), 'students and', len(connections), 'connections left to process')
+        if DEBUG_MODE:
+            print('')
+            print(len(listOfStudentObjs), 'students and', len(connections), 'connections left to process')
+            
         decisions.append('')
         minImpact = 99999
         for subj in teacher.avSubjs:
             studentWithThisSubjChoice = [ s for s in listOfStudentObjs if s.choice1 == subj ]
-            
-            print(teacher.idName, subj, len(studentWithThisSubjChoice), '|', ', '.join([ s.pyccode for s in studentWithThisSubjChoice ]))
+            if DEBUG_MODE:
+                print(teacher.idName, subj, len(studentWithThisSubjChoice), '|', ', '.join([ s.pyccode for s in studentWithThisSubjChoice ]))
             studentWithThisSubjChoice.sort(key=lambda s: s.avIndex, reverse=False)
             if len(studentWithThisSubjChoice) > 4:
                 t_selected = studentWithThisSubjChoice[0:4]
             else:
                 t_selected = studentWithThisSubjChoice
 
-            #print('t_selected', [s.pyccode for s in t_selected])
+            if DEBUG_MODE:
+                print('t_selected', [s.pyccode for s in t_selected])
 
             impactedStudentNodes = [ c for c in connections if c.node1.value.idName == teacher.idName and not c.node2.value.choice1 == subj ]
             impact = len(impactedStudentNodes)
@@ -334,7 +335,7 @@ print(decisions)
 print('There are', ret[1], 'students cannot be assigned')
 print('There are', ret[2], 'connections remaining')
 print('There are', ret[3], 'unassigned teachers not needed')
-
+input()
 
 
 
