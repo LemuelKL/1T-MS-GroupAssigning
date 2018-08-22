@@ -322,7 +322,14 @@ def program():
                 minImpact = impact
                 
         listOfStudentObjs = [ s for s in listOfStudentObjs if s not in selected ]
-        connections = connectStudentsWithTeachersByCourses(listOfStudentObjs, listOfTeacherObjs, listOfCrouseObjs)       
+        connections = connectStudentsWithTeachersByCourses(listOfStudentObjs, listOfTeacherObjs, listOfCrouseObjs)
+        for student in listOfStudentObjs:
+            connWithThisTeacher = [ c for c in connections if c.node2.value.pyccode == student.pyccode ]
+            student.nConnection = len(connWithThisTeacher)
+            student.calcAvIndex()
+
+        listOfStudentObjs.sort(key=lambda t: t.avIndex, reverse=False)
+        
         i += 1
 
     unassignedTeachers = [ d for d in decisions if d.endswith('_')]
